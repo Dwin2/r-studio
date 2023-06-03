@@ -23,6 +23,8 @@ register(MulticoreParam(4))
 resOrdered <- res[order(res$pvalue),]
 summary(res)
 
+res05 <- results(dds, alpha=0.05)
+summary(res05)
 
 #Likelihood-Ratio Test
 
